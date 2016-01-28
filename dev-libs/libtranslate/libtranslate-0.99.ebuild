@@ -33,6 +33,9 @@ src_prepare() {
 	epatch "${FILESDIR}"/${P}-man-page.diff
 	epatch "${FILESDIR}"/${P}-libsoup24.diff
 
+	# from Fedora
+	epatch "${FILESDIR}"/${P}-fix-modules.patch
+
 	# use services.xml from Fedora
 	# http://pkgs.fedoraproject.org/cgit/rpms/libtranslate.git/
 	cp "${FILESDIR}"/${PN}-services.xml-20100303 "${S}"/data/services.xml.in
