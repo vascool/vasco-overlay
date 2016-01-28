@@ -31,9 +31,15 @@ src_prepare() {
 	epatch "${FILESDIR}"/${P}-condfix.diff
 	epatch "${FILESDIR}"/${P}-int64.diff
 	epatch "${FILESDIR}"/${P}-man-page.diff
+
+	# unofficial, contributed by Dan Winship
 	epatch "${FILESDIR}"/${P}-libsoup24.diff
 
+	# unofficial, contributed by Dmitry Butskoy
+	epatch "${FILESDIR}"/${P}-postmarker.diff
+
 	# from Fedora
+	# See https://bugs.launchpad.net/ubuntu/+source/libtranslate/+bug/419793
 	epatch "${FILESDIR}"/${P}-fix-modules.patch
 
 	# use services.xml from Fedora
