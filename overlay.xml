@@ -60,7 +60,7 @@ SYN
 FIN
 -->
   <repo quality="experimental" status="unofficial">
-    <name>vascovo</name>
+    <name>vasco</name>
     <description lang="en">Vasco's overlay</description>
     <description lang="pt">Overlay do Vasco</description>
     <homepage>https://github.com/vascool</homepage>
