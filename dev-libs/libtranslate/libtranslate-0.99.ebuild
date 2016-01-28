@@ -13,7 +13,7 @@ SRC_URI="http://savannah.nongnu.org/download/${PN}/${P}.tar.gz"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="generic talkfilters"
+IUSE="generic talkfilters static-libs"
 
 RDEPEND=">=dev-libs/glib-2.4
 	generic? (
@@ -42,6 +42,7 @@ src_prepare() {
 
 src_configure() {
 	econf \
+		$(use_enable static-libs static) \
 		$(use_enable generic) \
 		$(use_enable talkfilters)
 }
