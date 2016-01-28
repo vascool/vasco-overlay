@@ -1,0 +1,16 @@
+diff -up virtaal-0.7.0/bin/virtaal.no_depcheck virtaal-0.7.0/bin/virtaal
+--- virtaal-0.7.0/bin/virtaal.no_depcheck	2011-05-28 12:08:39.000000000 +0200
++++ virtaal-0.7.0/bin/virtaal	2011-06-03 09:01:58.394348022 +0200
+@@ -28,10 +28,10 @@ if os_name == 'nt':
+     sys.stderr = open(filename_template % ('stderr'), 'w')
+ 
+ # Some behaviour should vary, depending on whether Virtaal is packaged or not
+-packaged = getattr(sys, 'frozen', False)
++#packaged = getattr(sys, 'frozen', False)
+ # Distributions can just set this value to True, if dependencies are taken care
+ # of elsewhere:
+-#packaged = True
++packaged = True
+ 
+ # Let's check for dependencies before we do anything else
+ if not packaged:

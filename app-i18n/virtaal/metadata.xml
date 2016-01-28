@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<longdescription lang="en">
+Virtaal is a graphical translation tool. It is meant to be easy to use and
+powerful at the same time. Although the initial focus is on software
+translation (localisation or l10n), we definitely intend it to be useful for
+several purposes.
+</longdescription>
+<use>
+	<flag name="tinytm">TinyTM plugin</flag>
+	<flag name="levenshtein">Speed up Levenshtein measures using <pkg>dev-pytho/python-levenshtein</pkg></flag>
+	<flag name="libproxy">Improve support for proxies</flag>
+	<flag name="linguas_cgg">Kiga locale</flag>
+	<flag name="linguas_ff">Fula locale</flag>
+</use>
+<upstream>
+	<remote-id type="github">translate/virtaal</remote-id>
+	<remote-id type="sourceforge">virtaal</remote-id>
+	<doc lang="en">http://docs.translatehouse.org/projects/virtaal/en/latest/</doc>
+</upstream>
+</pkgmetadata>
