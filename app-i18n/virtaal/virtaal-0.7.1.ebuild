@@ -18,7 +18,7 @@ SRC_URI="mirror://sourceforge/translate/${P}.tar.bz2"
 LICENSE="GPL-2+ LGPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="spell tinytm +levenshtein +libproxy libtranslate"
+IUSE="spell tinytm +levenshtein +libproxy"
 
 DEPEND="dev-python/translate-toolkit[${PYTHON_USEDEP}]"
 RDEPEND="${DEPEND}
@@ -34,7 +34,6 @@ RDEPEND="${DEPEND}
 	)
 	levenshtein? ( dev-python/python-levenshtein[${PYTHON_USEDEP}] )
 	libproxy? ( net-libs/libproxy )
-	libtranslate? ( dev-libs/libtranslate )
 	"
 
 python_prepare_all() {

@@ -11,7 +11,6 @@ several purposes.
 	<flag name="tinytm">TinyTM plugin</flag>
 	<flag name="levenshtein">Speed up Levenshtein measures using <pkg>dev-pytho/python-levenshtein</pkg></flag>
 	<flag name="libproxy">Improve support for proxies</flag>
-	<flag name="libtranslate">Enable support for Machine Translation plugin using <pkg>dev-libs/libtranslate</pkg></flag>
 	<flag name="linguas_cgg">Kiga locale</flag>
 	<flag name="linguas_ff">Fula locale</flag>
 </use>
