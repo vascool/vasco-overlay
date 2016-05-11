@@ -1,0 +1,13 @@
+QA: remove repeated MimeType entry application/x-gettext
+
+--- virtaal-0.7.1.orig/share/applications/virtaal.desktop	2012-01-09 12:17:54.000000000 -0100
++++ virtaal-0.7.1/share/applications/virtaal.desktop	2016-05-11 17:36:19.117526596 +0000
+@@ -136,7 +136,7 @@
+ TryExec=virtaal
+ Exec=virtaal %f
+ Icon=virtaal
+-MimeType=text/x-gettext-translation;text/x-gettext-translation-template;application/x-gettext;application/x-gettext-translation;application/x-po;application/x-gettext;text/x-po;application/x-xliff+xml;application/x-xliff;text/x-wordfast;application/x-tmx;application/x-tbx;application/x-linguist;application/x-qph;application/x-qm;
++MimeType=text/x-gettext-translation;text/x-gettext-translation-template;application/x-gettext;application/x-gettext-translation;application/x-po;text/x-po;application/x-xliff+xml;application/x-xliff;text/x-wordfast;application/x-tmx;application/x-tbx;application/x-linguist;application/x-qph;application/x-qm;
+ # Not yet supported
+ # application/x-sdf;
+ # Monolingual

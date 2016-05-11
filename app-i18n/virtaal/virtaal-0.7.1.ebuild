@@ -37,8 +37,9 @@ RDEPEND="${DEPEND}
 	"
 
 python_prepare_all() {
-	PATCHES=(
+	local PATCHES=(
 		"${FILESDIR}/${P}-packaged.patch"
+		"${FILESDIR}/${P}-QA-fix-MimeType.patch"
 	)
 
 	remove_locale() {
