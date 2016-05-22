@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<longdescription lang="en">
+		Pure-python replacement for notify-python, using python-dbus to
+		communicate with the notifications server directly. It’s compatible
+		with Python 2 and 3, and its callbacks can work with Gtk 3 or Qt 4
+		applications.
+	</longdescription>
+</pkgmetadata>
